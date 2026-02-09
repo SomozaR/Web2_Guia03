@@ -21,7 +21,7 @@ export function useFetchMovieDetails(selectedId) {
         setError(null);
 
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
         );
 
         if (!response.ok) {
